@@ -52,7 +52,6 @@ class AuthController extends Controller
         ]);
     }
 
-    // Déconnexion
     public function logout(Request $request)
     {
         $request->user()->tokens()->delete();
